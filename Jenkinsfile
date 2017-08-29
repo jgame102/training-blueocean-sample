@@ -30,10 +30,6 @@ pipeline {
 '''
             
           },
-          "Report": {
-            junit ' **/test-results/karma/*.xml'
-            
-          },
           "Backend": {
             sh '''./jenkins/test-backend.sh
 
