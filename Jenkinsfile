@@ -50,6 +50,14 @@ pipeline {
 
 '''
             
+          },
+          "Performance": {
+            sh '''./jenkins/test-performance.sh
+
+
+
+'''
+            
           }
         )
       }
