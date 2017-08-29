@@ -42,6 +42,14 @@ pipeline {
 
 '''
             
+          },
+          "Static": {
+            sh '''./jenkins/test-static.sh
+
+
+
+'''
+            
           }
         )
       }
