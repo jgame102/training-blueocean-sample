@@ -10,6 +10,7 @@ pipeline {
     stage('Build') {
       steps {
         sh './jenkins/build.sh'
+        archiveArtifacts(artifacts: 'target/*.war', allowEmptyArchive: true)
       }
     }
   }
